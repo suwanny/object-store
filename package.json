@@ -1,0 +1,37 @@
+{
+  "name": "object-store",
+  "version": "0.0.1",
+  "description": "In Memory Object Store which supports redis, memcached, and lru-cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec --recursive spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/suwanny/object-store.git"
+  },
+  "keywords": [
+    "cache",
+    "redis",
+    "memcached"
+  ],
+  "dependencies": {
+    "lru-cache": "2.3.0"
+    , "lodash": "1.2.0"
+    , "coffee-script": "1.6.2"
+    , "glob": "3.1.21"
+    , "q": "0.9.3"
+    , "async": "0.2.8"
+    , "redis": "0.8.3"
+    , "hiredis": "0.1.15"
+    , "memcached": "0.2.2"
+    , "microtime": "0.3.3"
+    , "mocha": "1.9.0"
+    , "should": "1.2.2"
+  },
+  "author": "Soo Hwan Park",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "6abd32c175452c2111386e0f8cbf44a36b50a0a3"
+}
+
