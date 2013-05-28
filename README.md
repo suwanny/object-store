@@ -12,19 +12,20 @@ In Memory Object Store which supports redis, memcached, and lru-cache
 ## Create a store
 ===================
 
-### RedisStore
-  
-    var store = ObjectStore.create('redis');
+### Callback based
+
+    var ObjectStore = require('object-store')
+    var store = ObjectStore.create('redis'); // redis
+    var store = ObjectStore.create('memcached'); // memcached
+    var store = ObjectStore.create('memory'); // memory
 
 
-### MemcachedStore
-
-    var store = ObjectStore.create('memcached');
-
-
-### MemoryStore
-
-    var store = ObjectStore.create('memory');
+### Deferred (based on Promise)
+    
+    var DeferredStore = require('object-store').DeferredStore;
+    var store = new DeferredStore('redis');
+    var store = new DeferredStore('memcached');
+    var store = new DeferredStore('memory');
 
 
 ## Store Methods
