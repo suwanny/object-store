@@ -51,6 +51,7 @@ In Memory Object Store which supports redis, memcached, and lru-cache
 
     store.has("hello", function(err, resp) { ... });
 
+
 ### Delete all
 
     store.flush(function(err, resp) { ... });
