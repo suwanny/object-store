@@ -56,6 +56,16 @@ In Memory Object Store which supports redis, memcached, and lru-cache
 
     store.flush(function(err, resp) { ... });
 
+## Run Demos
+
+    node demo/memcached_async.js
+    node demo/memcached_q.js
+    node demo/redis_async.js
+    node demo/redis_q.js
+    node demo/memory_async.js
+    node demo/memory_q.js
+    
+
 
 ## License
 
